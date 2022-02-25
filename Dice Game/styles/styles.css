@@ -1,0 +1,139 @@
+@media only screen and (max-width: 800px){
+    .grid-item-section{width: 100%;}
+}
+
+html{
+    background-color: #2b2b2b;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* button styling from w3schools */
+button {
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  h3{
+      text-align:center;
+  }
+
+.title{
+    margin-left: 20px;
+}
+
+.grid-container{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+        "subtitle subtitle"
+        "player1 player2"
+        "player1 player2"
+        "player1 player2"
+        "footer footer"
+}
+
+.grid-item-player1{
+    background-color: rgb(54, 57, 87);
+    grid-area: player1;
+    padding-left: 10px;
+    border-style: solid;
+    border-color: snow;
+}
+
+.grid-item-player2{
+    background-color: rgb(54, 57, 87);
+    grid-area: player2;
+    padding-left: 10px;
+    border-style: solid;
+    border-color: snow;
+}
+
+.grid-item-footer{
+    background-color: rgb(54, 57, 87);
+    grid-area: footer;
+    padding-left: 10px;
+    border-style: solid;
+    border-color: snow;
+}
+
+.subtitle{
+    background-color: rgb(54, 57, 87);
+    grid-area: subtitle;
+    padding-left: 10px;
+
+}
+
+.dice{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#title{
+    text-align: center;
+}
+
+#slide{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#buttons{
+    text-align: center;
+}
+
+
+#pop-up{
+    display: none;
+    position:fixed;
+    top:0px;
+    left:0px;    
+    width:100vw;
+    height:100vh;    
+	z-index:1000;
+	background-color: rgb(54, 57, 87, .7);    
+	font-size:.85em;
+
+}
+
+#pop-up div{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%, -50%);
+	max-width:400px;
+	min-width:300px;
+	padding:10px;
+	border-radius:10px;
+	background-color: rgb(54, 57, 87);
+	color:white;
+    border: solid;
+    border-color: white;
+}
+
+#close-pop-up{
+	background-color: white;
+	color:rgb(54, 57, 87);
+	border-radius: 50%;
+	font-weight: bold;
+	border:solid 3px rgb(54, 57, 87);
+	cursor:pointer;
+	position:absolute;
+	top:-10px;
+	right:-10px;
+}
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Final Project</title>
+
+      <meta charset="utf-8"/>
+
+      
+      <link rel="stylesheet" href="styles/styles.css">
+
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+      </style>
+
+    <script src="scripts/jquery-3.4.1.min.js" defer></script>
+    <script src="scripts/final_project.js" defer></script>
+
+
+  </head>
+    
+    <body>
+        
+        <h1 class="title">COMP 2132 Project</h1>
+        
+        <div class="grid-container">
+
+          <div class="subtitle">
+
+            <h2 id="title">Dice Game</h2>
+
+          </div>
+
+        <main class="grid-item-player1">
+
+          <h3>You</h3>
+          <img src="images/1.png" alt="dice face" class="dice" id="dice1">
+          <img src="images/1.png" alt="dice face" class="dice" id="dice2">
+
+          <p id="round-score-1">Score this round: 0</p>
+          <p id="total-score-1">Total Score: 0</p>
+
+        </main>
+
+        <div class="grid-item-player2">
+
+          <h3>Opponent</h3>
+          <img src="images/1.png" alt="dice face" class="dice"  id="dice3">
+          <img src="images/1.png" alt="dice face" class="dice"  id="dice4">
+
+          <p id="round-score-2">Score this round: 0</p>
+          <p id="total-score-2">Total Score: 0</p>
+
+        </div>
+
+      <footer class="grid-item-footer">
+
+        <div id="buttons">
+          <button type="button" id="new-game">New Game</button>
+          <button type="button" id="roll">Roll Dice</button>
+        </div>
+
+      </footer>
+
+      
+      <section id="pop-up">
+        <div>
+          <button id="close-pop-up">&#x2715</button>
+          <h1 id="pop-up-text">Congratulations, You won!</h1>
+        </div>
+      </section>
+   
+        </div>
+        
+    </body>
+    
+</html>
